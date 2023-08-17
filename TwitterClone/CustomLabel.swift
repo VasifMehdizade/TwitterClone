@@ -20,6 +20,8 @@ class CustomLabel: UILabel {
     {
         super.init(frame: .zero)
         
+        self.text = text
+        
         if let hexcode = hexcode{
             self.textColor = UIColor(named: hexcode)
         } else {
@@ -31,8 +33,6 @@ class CustomLabel: UILabel {
         } else {
             self.font = UIFont(name: font, size: size ?? CGFloat(1))
         }
-        
-        self.text = text
         
         textAlignment = alignment
         self.numberOfLines = numberOfLines
