@@ -16,6 +16,7 @@
 		2ABD812C2A8E9B8D0069362B /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD812B2A8E9B8D0069362B /* EntryController.swift */; };
 		2ABD812E2A8E9DDD0069362B /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD812D2A8E9DDD0069362B /* CustomLabel.swift */; };
 		2ABD81302A8EA3330069362B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD812F2A8EA3330069362B /* CustomButton.swift */; };
+		2ABD81322A8EAE840069362B /* NSLayoutAnchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD81312A8EAE840069362B /* NSLayoutAnchors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2ABD812B2A8E9B8D0069362B /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		2ABD812D2A8E9DDD0069362B /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		2ABD812F2A8EA3330069362B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		2ABD81312A8EAE840069362B /* NSLayoutAnchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutAnchors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				2ABC69832A8E90120051CAB8 /* Info.plist */,
 				2ABD812D2A8E9DDD0069362B /* CustomLabel.swift */,
 				2ABD812F2A8EA3330069362B /* CustomButton.swift */,
+				2ABD81312A8EAE840069362B /* NSLayoutAnchors.swift */,
 			);
 			path = TwitterClone;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				2ABD81272A8E914D0069362B /* LoginController.swift in Sources */,
 				2ABD812C2A8E9B8D0069362B /* EntryController.swift in Sources */,
 				2ABD81302A8EA3330069362B /* CustomButton.swift in Sources */,
+				2ABD81322A8EAE840069362B /* NSLayoutAnchors.swift in Sources */,
 				2ABC69782A8E90110051CAB8 /* SceneDelegate.swift in Sources */,
 				2ABD81292A8E92340069362B /* BaseVC.swift in Sources */,
 			);

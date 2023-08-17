@@ -41,4 +41,15 @@ class EntryController: BaseVC {
         view.addSubview(haveAnAccountAlreadyLabel)
         view.addSubview(loginButton)
     }
+    
+    override func setupAnchors() {
+        super.setupAnchors()
+        infoLabel.centerInSuperview()
+        infoLabel.anchorSize(.init(width: 400, height: 80))
+        createAccountButton.anchor(top: infoLabel.bottomAnchor, leading: view.leadingAnchor, trailing: view.trailingAnchor,padding: .init(top: 8, leading: 12, trailing: -12), size: .init(width: 0, height: 34))
+        
+        haveAnAccountAlreadyLabel.anchor(leading: infoLabel.leadingAnchor, bottom: view.bottomAnchor, padding: .init(leading: 12, bottom: -12, trailing: -8), size: .init(width: 80, height: 20))
+        
+        loginButton.anchor(top: haveAnAccountAlreadyLabel.topAnchor, leading: haveAnAccountAlreadyLabel.trailingAnchor, bottom: haveAnAccountAlreadyLabel.bottomAnchor, size: .init(width: 40, height: 0))
+    }
 }
