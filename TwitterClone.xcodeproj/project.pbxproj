@@ -13,6 +13,8 @@
 		2ABC69822A8E90120051CAB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC69802A8E90120051CAB8 /* LaunchScreen.storyboard */; };
 		2ABD81272A8E914D0069362B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD81262A8E914D0069362B /* LoginController.swift */; };
 		2ABD81292A8E92340069362B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD81282A8E92340069362B /* BaseVC.swift */; };
+		2ABD812C2A8E9B8D0069362B /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD812B2A8E9B8D0069362B /* EntryController.swift */; };
+		2ABD812E2A8E9DDD0069362B /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD812D2A8E9DDD0069362B /* CustomLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2ABC69832A8E90120051CAB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ABD81262A8E914D0069362B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2ABD81282A8E92340069362B /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		2ABD812B2A8E9B8D0069362B /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		2ABD812D2A8E9DDD0069362B /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +60,12 @@
 		2ABC69742A8E90110051CAB8 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
-				2ABC69752A8E90110051CAB8 /* AppDelegate.swift */,
-				2ABC69772A8E90110051CAB8 /* SceneDelegate.swift */,
+				2ABD812A2A8E97010069362B /* Core */,
 				2ABD81222A8E91160069362B /* LoginPage */,
 				2ABC697E2A8E90120051CAB8 /* Assets.xcassets */,
 				2ABC69802A8E90120051CAB8 /* LaunchScreen.storyboard */,
 				2ABC69832A8E90120051CAB8 /* Info.plist */,
-				2ABD81282A8E92340069362B /* BaseVC.swift */,
+				2ABD812D2A8E9DDD0069362B /* CustomLabel.swift */,
 			);
 			path = TwitterClone;
 			sourceTree = "<group>";
@@ -88,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				2ABD81262A8E914D0069362B /* LoginController.swift */,
+				2ABD812B2A8E9B8D0069362B /* EntryController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +101,16 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2ABD812A2A8E97010069362B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2ABC69752A8E90110051CAB8 /* AppDelegate.swift */,
+				2ABC69772A8E90110051CAB8 /* SceneDelegate.swift */,
+				2ABD81282A8E92340069362B /* BaseVC.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ABC69762A8E90110051CAB8 /* AppDelegate.swift in Sources */,
+				2ABD812E2A8E9DDD0069362B /* CustomLabel.swift in Sources */,
 				2ABD81272A8E914D0069362B /* LoginController.swift in Sources */,
+				2ABD812C2A8E9B8D0069362B /* EntryController.swift in Sources */,
 				2ABC69782A8E90110051CAB8 /* SceneDelegate.swift in Sources */,
 				2ABD81292A8E92340069362B /* BaseVC.swift in Sources */,
 			);
