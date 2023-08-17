@@ -12,6 +12,7 @@
 		2ABC697F2A8E90120051CAB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC697E2A8E90120051CAB8 /* Assets.xcassets */; };
 		2ABC69822A8E90120051CAB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC69802A8E90120051CAB8 /* LaunchScreen.storyboard */; };
 		2ABD81272A8E914D0069362B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD81262A8E914D0069362B /* LoginController.swift */; };
+		2ABD81292A8E92340069362B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD81282A8E92340069362B /* BaseVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2ABC69812A8E90120051CAB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ABC69832A8E90120051CAB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ABD81262A8E914D0069362B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		2ABD81282A8E92340069362B /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +56,13 @@
 		2ABC69742A8E90110051CAB8 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
-				2ABD81222A8E91160069362B /* LoginPage */,
 				2ABC69752A8E90110051CAB8 /* AppDelegate.swift */,
 				2ABC69772A8E90110051CAB8 /* SceneDelegate.swift */,
+				2ABD81222A8E91160069362B /* LoginPage */,
 				2ABC697E2A8E90120051CAB8 /* Assets.xcassets */,
 				2ABC69802A8E90120051CAB8 /* LaunchScreen.storyboard */,
 				2ABC69832A8E90120051CAB8 /* Info.plist */,
+				2ABD81282A8E92340069362B /* BaseVC.swift */,
 			);
 			path = TwitterClone;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				2ABC69762A8E90110051CAB8 /* AppDelegate.swift in Sources */,
 				2ABD81272A8E914D0069362B /* LoginController.swift in Sources */,
 				2ABC69782A8E90110051CAB8 /* SceneDelegate.swift in Sources */,
+				2ABD81292A8E92340069362B /* BaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

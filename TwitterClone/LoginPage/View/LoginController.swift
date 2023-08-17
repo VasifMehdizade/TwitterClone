@@ -7,11 +7,8 @@
 
 import UIKit
 
-class LoginController: UIViewController {
+class LoginController: BaseVC {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .red
-    }
+
 
 }
