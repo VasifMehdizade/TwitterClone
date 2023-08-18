@@ -13,7 +13,7 @@ class CustomButton: UIButton {
          hexCode: String? = nil,
          title: String,
          titleColor: UIColor,
-         font: String? = nil,
+         font: String? = "Chirp",
          systemFont: UIFont? = nil,
          size: CGFloat,
          cornerRadius: CGFloat = 0) {
