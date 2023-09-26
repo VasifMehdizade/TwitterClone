@@ -15,16 +15,6 @@ class EntryController: BaseVC {
         image.image = UIImage(named: "logo-white")
         return image
     }()
-    
-//    AAAAAAAAAAAAAAAAAAAAAB7rpQEAAAAAlqylBwYokAyW0iyTIvFGP%2BC5dsE%3Dc6sMu7v8x0CU5zm7Gi6cj4vSIXE9YuqFbjiVbElHffy9FD8yfK  Bearer token
-    
-//    7lXn9ok5s1XEGcYoeurf1BV1M Api key
-    
-//    GHzqfW6kW3zbt9Kmb0cEMYuQQy1jG25EG7KVG5PfKCNEOhXTS7 API Key secret
-    
-//    1312422995445637121-aqOXIhVXTeZaH1j5VZx1L0UuS0Bpx3  Access token
-    
-//    T7Cmk5nj0ZL0Im1TIgtLM2O3CSZjqgWzKLzQTDDkinzQN  Access token secret
 
     lazy var infoLabel: CustomLabel = {
         let infoLabel = CustomLabel(text: "See what's happening in the world right now.",

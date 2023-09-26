@@ -7,8 +7,13 @@
 
 import UIKit
 
+protocol LoginControllerDelegate: AnyObject {
+    func didFinishAuth()
+}
+
 class LoginController: BaseVC {
 
-
-
+    var coordinator : AppCoordinator?
+    
+    weak var delegate : (LoginControllerDelegate)?
 }
