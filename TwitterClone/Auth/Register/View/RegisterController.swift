@@ -2,12 +2,12 @@
 //  RegisterController.swift
 //  TwitterClone
 //
-//  Created by Vasif Mehdi on 26.09.23.
+//  Created by Vasif Mehdi on 27.09.23.
 //
 
 import UIKit
 
-class RegisterController: UIViewController {
+class RegisterController: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

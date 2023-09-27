@@ -28,6 +28,10 @@ class AppCoordinator: Coordinator {
     func backLogin() {
         navigationController.popViewController(animated: true)
     }
+    
+    func showLoginViewController(window: UIWindow) {
+        
+    }
 
     func showLogin(delegate: LoginControllerDelegate?) {
         let controller      = LoginController()
