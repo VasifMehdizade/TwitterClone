@@ -53,6 +53,7 @@ class EntryController: BaseVC {
                                   titleColor: .black,
                                   systemFont: UIFont(name: "Droid Sans", size: 20),
                                   size: 20, cornerRadius: 30)
+        button.addTarget(self, action: #selector(tappedGoGoogle), for: .touchUpInside)
         return button
     }()
     
@@ -62,6 +63,7 @@ class EntryController: BaseVC {
                                   titleColor: .black,
                                   systemFont: UIFont(name: "Droid Sans", size: 20),
                                   size: 20, cornerRadius: 30)
+        button.addTarget(self, action: #selector(tappedGoApple), for: .touchUpInside)
         return button
     }()
     
@@ -85,6 +87,14 @@ class EntryController: BaseVC {
     
     @objc func tappedGoRegister() {
         viewModel?.showRegister()
+    }
+    
+    @objc func tappedGoGoogle() {
+        UIApplication.shared.openURL(NSURL(string: "http://www.google.com")! as URL)
+    }
+
+    @objc func tappedGoApple() {
+        UIApplication.shared.openURL(NSURL(string: "http://www.apple.com")! as URL)
     }
     
     lazy var loginButton: CustomButton = {
