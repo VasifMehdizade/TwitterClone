@@ -13,16 +13,12 @@ class AppCoordinator: Coordinator {
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+        navigationController.setNavigationBarHidden(true, animated: false)
     }
 
-    func start(window: UIWindow) {
-        window.rootViewController = UINavigationController(rootViewController: EntryController())
-        window.makeKeyAndVisible()
-    }
-
-    func showRegister() {
-        let controller = RegisterController()
-        navigationController.show(controller, sender: nil)
+    func showRegister(viewModel: AuthViewModel) {
+        let controller = RegisterController(viewModel: viewModel)
+        navigationController.pushViewController(controller, animated: true)
     }
 
     func backLogin() {
@@ -30,7 +26,12 @@ class AppCoordinator: Coordinator {
     }
     
     func showLoginViewController(window: UIWindow) {
-        
+        DefaultsStorage.set(bool: false, by: .UD_KEY_LOGIN)
+        DefaultsStorage.delete(by: .UD_KEY_USER)
+        window.rootViewController?.dismiss(animated: false, completion: nil)
+        window.rootViewController = nil
+        window.rootViewController = UINavigationController(rootViewController: EntryController(viewModel: AuthViewModel(coordinator: self)))
+        window.makeKeyAndVisible()
     }
 
     func showLogin(delegate: LoginControllerDelegate?) {
@@ -38,8 +39,15 @@ class AppCoordinator: Coordinator {
         controller.delegate = delegate
         let nav = UINavigationController(rootViewController: controller)
         nav.modalPresentationStyle = .fullScreen
-
         navigationController.present(nav, animated: false)
+    }
+    
+    func popViewController() {
+        navigationController.popViewController(animated: true)
+    }
+    
+    func popToRoot() {
+        navigationController.popToRootViewController(animated: true)
     }
 
 }

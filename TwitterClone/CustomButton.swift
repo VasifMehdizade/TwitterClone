@@ -8,6 +8,12 @@
 import UIKit
 
 class CustomButton: UIButton {
+    
+    private lazy var buttonView: UIView = {
+        let view = UIView()
+        view.layer.cornerRadius = 12
+        return view
+    }()
 
     init(backgroundcolor: UIColor? = nil,
          hexCode: String? = nil,
@@ -19,6 +25,7 @@ class CustomButton: UIButton {
          cornerRadius: CGFloat = 0) {
         
         super.init(frame: .zero)
+        setupUI()
         
         self.setTitle(title, for: .normal)
         self.setTitleColor(titleColor, for: .normal)
@@ -41,5 +48,9 @@ class CustomButton: UIButton {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
+    private func setupUI() {
+        addSubview(buttonView)
+    }
+    
 }
